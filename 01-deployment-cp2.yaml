@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cp2py-app-deploy
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: cp2py
+  template:
+    metadata:      
+      labels:
+        app: cp2py
+    spec:
+      containers:
+      - name: cp2py
+        image: localhost:32000/cp2py:k1
+        ports:
+        - containerPort: 80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
